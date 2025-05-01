@@ -17,86 +17,162 @@
 	    <div class="collapse navbar-collapse" id="navbarNav">
 	      <ul class="navbar-nav">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">Home</a>
+	          <a class="nav-link active" aria-current="page" href="#home">Home</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">Categories</a>
+	          <a class="nav-link" href="#categories-section">Categories</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">About</a>
+	          <a class="nav-link" href="#about">About</a>
 	        </li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
 
-	<div class="container mt-5" id="home">
-		<h1>Welcome to jayhub</h1>
-		<p>Discover new knowledge and expand your horizons with our curated resources.</p>
-	</div>
+	<!-- Home Section -->
+	<section id="home" class="mt-5">
+		<div class="container" id="introduction">
+			<h1>Welcome to jayhub</h1>
+			<p>Discover new knowledge and expand your horizons with our curated resources.</p>
+		</div>
 
-	<div class="container mt-5" id="resources">
-		<h2>Featured Resources</h2>
-		<div class="row">
-			<div class="col-md-6 mb-3">
-				<div class="card">
-				  <img src="images/istockphoto-1439425791-612x612 (1).jpg" class="card-img-top" alt="MERN Stack Development">
-				  <div class="card-body">
-				    <h5 class="card-title">MERN Web Development</h5>
-				    <p class="card-text">Learn full-stack development with MongoDB, Express, React, and Node.js.</p>
-				    <a href="#" class="btn btn-primary">Explore</a>
-				  </div>
+		<div class="container mt-5" id="featured">
+			<h2>Featured Resources</h2>
+			<div class="row">
+				<div class="col-md-6 mb-3">
+					<div class="card">
+					  <img src="images/istockphoto-1439425791-612x612 (1).jpg" class="card-img-top" alt="MERN Stack Development">
+					  <div class="card-body">
+						<h5 class="card-title">MERN Web Development</h5>
+						<p class="card-text">Learn full-stack development with MongoDB, Express, React, and Node.js.</p>
+						<a href="#" class="btn btn-primary">Explore</a>
+					  </div>
+					</div>
 				</div>
-			</div>
-			<div class="col-md-6 mb-3">
-				<div class="card">
-				  <img src="images/istockphoto-1439425791-612x612.jpg" class="card-img-top" alt="Project Management">
-				  <div class="card-body">
-				    <h5 class="card-title">Project Management</h5>
-				    <p class="card-text">Master the principles and practices of effective project management.</p>
-				    <a href="#" class="btn btn-primary">Discover</a>
-				  </div>
+				<div class="col-md-6 mb-3">
+					<div class="card">
+					  <img src="images/istockphoto-1439425791-612x612.jpg" class="card-img-top" alt="Project Management">
+					  <div class="card-body">
+						<h5 class="card-title">Project Management</h5>
+						<p class="card-text">Master the principles and practices of effective project management.</p>
+						<a href="#" class="btn btn-primary">Discover</a>
+					  </div>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
-	<div class="container mt-5" id="about">
-		<h2>About Us</h2>
-		<div class="row">
-			<div class="col-md-6">
-				<h3>Contact Us</h3>
-				<form>
-				  <div class="mb-3">
-				    <label for="nameInput" class="form-label">Name</label>
-				    <input type="text" class="form-control" id="nameInput">
-				  </div>
-				  <div class="mb-3">
-				    <label for="emailInput" class="form-label">Email address</label>
-				    <input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
-				    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-				  </div>
-				  <div class="mb-3">
-				    <label for="messageTextarea" class="form-label">Message</label>
-				    <textarea class="form-control" id="messageTextarea" rows="3"></textarea>
-				  </div>
-				  <button type="submit" class="btn btn-primary">Submit</button>
-				</form>
+	<!-- Categories Section -->
+	<section id="categories-section" class="mt-5">
+		<div class="container">
+			<h2>Categories</h2>
+			<div id="categories" class="row mt-3">
+				<div class="col-md-4 mb-3">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Web Development</h5>
+							<p class="card-text">Learn modern web technologies and frameworks.</p>
+							<a href="#" class="btn btn-outline-primary">View Resources</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Data Science</h5>
+							<p class="card-text">Explore data analysis, machine learning, and AI.</p>
+							<a href="#" class="btn btn-outline-primary">View Resources</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-3">
+					<div class="card">
+						<div class="card-body">
+							<h5 class="card-title">Project Management</h5>
+							<p class="card-text">Learn methodologies for successful project delivery.</p>
+							<a href="#" class="btn btn-outline-primary">View Resources</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-6">
-				<h3>Our Location</h3>
-				<iframe 
-					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.636534020375!2d-122.0862784846925!3d37.42199997982522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c4a2c6de849!2sGoogleplex!5e0!3m2!1sen!2sus!4v1678886413975!5m2!1sen!2sus" 
-					width="100%" 
-					height="300" 
-					style="border:0;" 
-					allowfullscreen="" 
-					loading="lazy" 
-					referrerpolicy="no-referrer-when-downgrade">
-				</iframe>
+			
+			<div id="resources" class="mt-4">
+				<h3>Sample Resources</h3>
+				<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">React for Beginners</h5>
+							<small>Free</small>
+						</div>
+						<p class="mb-1">Start your journey in modern frontend development with React.</p>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Python Data Analysis</h5>
+							<small>Premium</small>
+						</div>
+						<p class="mb-1">Master data analysis techniques using Python libraries.</p>
+					</a>
+					<a href="#" class="list-group-item list-group-item-action">
+						<div class="d-flex w-100 justify-content-between">
+							<h5 class="mb-1">Agile Project Management</h5>
+							<small>Free</small>
+						</div>
+						<p class="mb-1">Learn the fundamentals of Agile methodology and Scrum framework.</p>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="mt-5">
+		<div class="container">
+			<h2>About Us</h2>
+			
+			<div id="mission" class="mt-4">
+				<h3>Our Mission</h3>
+				<p>At JayHub, we're committed to democratizing knowledge and making quality resources accessible to everyone. Our platform brings together experts and learners from around the world, creating a vibrant community dedicated to continuous growth and skill development.</p>
+				<p>Founded in 2023, we strive to curate the most relevant, up-to-date, and valuable learning materials across various domains, with special focus on technology, business, and personal development.</p>
+			</div>
+
+			<div id="contact" class="row mt-4">
+				<div class="col-md-6">
+					<h3>Contact Us</h3>
+					<form>
+					  <div class="mb-3">
+						<label for="nameInput" class="form-label">Name</label>
+						<input type="text" class="form-control" id="nameInput">
+					  </div>
+					  <div class="mb-3">
+						<label for="emailInput" class="form-label">Email address</label>
+						<input type="email" class="form-control" id="emailInput" aria-describedby="emailHelp">
+						<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+					  </div>
+					  <div class="mb-3">
+						<label for="messageTextarea" class="form-label">Message</label>
+						<textarea class="form-control" id="messageTextarea" rows="3"></textarea>
+					  </div>
+					  <button type="submit" class="btn btn-primary">Submit</button>
+					</form>
+				</div>
+				<div class="col-md-6">
+					<h3>Our Location</h3>
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3168.636534020375!2d-122.0862784846925!3d37.42199997982522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c4a2c6de849!2sGoogleplex!5e0!3m2!1sen!2sus!4v1678886413975!5m2!1sen!2sus" 
+						width="100%" 
+						height="300" 
+						style="border:0;" 
+						allowfullscreen="" 
+						loading="lazy" 
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+				</div>
+			</div>
+		</div>
+	</section>
 
 	<footer class="bg-light text-center text-lg-start mt-5">
 	  <div class="container p-4">
